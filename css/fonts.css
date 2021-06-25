@@ -1,0 +1,44 @@
+/* для подключения безопасного шрифта: */
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+
+/* для подключения небезопасного шрифта: */
+
+@font-face {
+    font-family: 'Lifehack';
+    src: url("../../fonts/Lifehack-Medium.woff2") format("woff2"), url("../../fonts/Lifehack-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap; }
+  @font-face {
+    font-family: 'Gagalin';
+    src: url("../../fonts/Gagalin/Gagalin-Regular.woff2") format("woff2"), url("../../fonts/Gagalin/Gagalin-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; }
+  @font-face {
+    font-family: 'Ubuntu';
+    src: url("../../fonts/Ubuntu/") format("woff2"), url("../../fonts/Ubuntu/Ubuntu-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap; }
+  @font-face {
+    font-family: 'Ubuntu';
+    src: url("../../fonts/Ubuntu/Ubuntu.woff2") format("woff2"), url("../../fonts/Ubuntu/Ubuntu.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; }
+  @font-face {
+    font-family: 'Ubuntu';
+    src: url("../../fonts/Ubuntu/Ubuntu-Light.woff2") format("woff2"), url("../../fonts/Ubuntu/Ubuntu-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap; }
+  @font-face {
+    font-family: 'Ubuntu';
+    src: url("../../fonts/Ubuntu/Ubuntu-Medium.woff2") format("woff2"), url("../../fonts/Ubuntu/Ubuntu-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap; }
