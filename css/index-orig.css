@@ -5,12 +5,20 @@
 }
 
 @import url('https://fonts.googleapis.com/css?family=Farsan|Hind+Siliguri|Racing+Sans+One|Six+Caps|Space+Mono:700');
-@import './fonts.css';
+
+@import url('./fonts.css');
 
 body
 {
     width: 1200px;
     margin: 0 auto;
+}
+
+main p {
+    font-size: 0.8em;
+    text-align: justify;
+    text-indent: 10pt;
+    margin: 2%;
 }
 
 .clear-fix:after
@@ -30,7 +38,7 @@ body
 .header__info
 {
     float: left;
-
+    text-align: center;
     box-sizing: border-box;
     width: 200px;
     padding: 25px 10px;
@@ -47,17 +55,28 @@ body
 
 .header__weather-title
 {
+    font-family: Space Mono, monospace;
+    font-size: 1.17em;
+    font-weight: bold;
+    text-align: center;
     margin: 0;
 }
 
 .header__weather-text
 {
+    text-align: justify;
+    font-size: 0.8em;
+    line-height: 1.1em;
     margin: 0;
 }
 
 .header__title
 {
     overflow: visible;
+    text-align: center;
+    font-family: 'Mariage';
+    font-size: 6em;
+    font-weight: bold;
 
     margin: 0;
 }
@@ -75,7 +94,7 @@ body
 .sub-header__copyright
 {
     display: inline-block;
-
+    font-size: 0.6em;
     margin: 0 30px;
 }
 
@@ -94,6 +113,9 @@ body
 /*––––––––––––––––––Блок статьи–––––––––––––––––––––*/
 .article__title
 {
+    font-family: Six Caps, sans-serif;
+    font-weight: 700;
+    font-size: 3.2em;
     margin-top: 0;
     margin-bottom: 10px;
 }
@@ -107,20 +129,33 @@ body
 
 .article__add-text
 {
+    text-indent: 10pt;
+    font-size: 0.8em;
+    font-style: italic;
+
     margin-top: 10px;
     margin-bottom: 4px;
 }
 
 .article__author
 {
+    column-span: all;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: center;
     display: block;
-
     margin-top: 10px;
 }
 
+
+
 .article__continue
 {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.8em;
     display: block;
+    column-span: all;
 }
 
 .article__image
@@ -138,6 +173,10 @@ body
 
 .article__subtitle
 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.17em;
     margin: 10px 0;
 }
 
@@ -152,13 +191,21 @@ body
     width: 100%;
 }
 
+.main-photo__caption {
+    text-align: right;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
 .main-photo__title
 {
+    font-weight: bold;
     margin: 0;
 }
 
 .main-photo__desc
 {
+    font-size: 0.7em;
     margin-bottom: 20px;
 }
 
@@ -182,6 +229,8 @@ body
 }
 
 /*––––––––––––––––––Центральные колонки газеты––––––––––––––––––*/
+
+
 .multicolumn
 {
     margin-top: 10px;
@@ -204,11 +253,23 @@ body
     padding-left: 10px;
 }
 
+.article__title.article__title_font_farsan {
+    font-size: 2.3em;
+    font-weight: bold;
+    font-family: 'Farsan', cursive;
+}
+
 .multicolumn__left
 {
     padding-right: 10px;
 
     border-right: 1px solid #000;
+}
+
+.article__title.article__title_font_racing {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Racing Sans One', cursive;
 }
 
 .multicolumn .line_type_short
@@ -220,6 +281,11 @@ body
 .multicolumn .article__title
 {
     margin: 10px 0 0 0;
+}
+
+.multicolumn .article__content {
+    column-count: 2;
+    column-gap: 15px;
 }
 
 .center-column
@@ -250,6 +316,10 @@ body
     padding: 0 10px;
 
     flex-shrink: 0;
+}
+
+article__image-caption {
+    font-size: 0.8em;
 }
 
 /*––––––––––––––––––––––––––––––––––––––––––––––––––*/

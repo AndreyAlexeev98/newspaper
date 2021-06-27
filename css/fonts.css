@@ -1,10 +1,18 @@
 /* для подключения безопасного шрифта: */
 
-body {
+/* body {
     font-family: Georgia, 'Times New Roman', Times, serif; 
-}
+} */
 
 /* для подключения небезопасного шрифта: */
+
+@font-face {
+	font-family: 'Mariage';
+	src: url('../fonts/Mariage.eot');
+	src: local('☺'), url('../fonts/Mariage.woff') format('woff'), url('../fonts/Mariage.ttf') format('truetype'), url('../fonts/Mariage.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
 @font-face {
     font-family: 'Lifehack';
